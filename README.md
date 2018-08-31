@@ -142,12 +142,12 @@ function createCommentBody(comment) {
 function createCommenterLabel(commenter) {
   var commenterDiv = document.createElement("div");
   var commenterLabel = document.createElement("p");
-  commenterLabel.innerHTML = "posted by:&nbsp;";
+  commenterLabel.innerHTML = "posted by: ";
   var commenterName = document.createElement("span");
   commenterName.innerHTML = commenter;
   commenterLabel.appendChild(commenterName);
   commenterDiv.appendChild(commenterLabel);
-  return commenterLabel;
+  return commenterDiv;
 }
 
 function postNewComment(body, commenter) {
